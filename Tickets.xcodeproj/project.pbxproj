@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6D12E1F4293EBAA4006876BF /* PerfilUsuarioViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D12E1F3293EBAA4006876BF /* PerfilUsuarioViewController.swift */; };
+		6D12E1F7293EBE73006876BF /* DescripcionTicketTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D12E1F6293EBE73006876BF /* DescripcionTicketTableViewCell.swift */; };
 		6D49978A293D64670039B24E /* InicioTicketsCompradosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D499789293D64670039B24E /* InicioTicketsCompradosViewController.swift */; };
 		6D49978C293D67090039B24E /* TicketsCompradosTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D49978B293D67090039B24E /* TicketsCompradosTableViewCell.swift */; };
 		6D5559742936D6090076EEE1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D5559732936D6090076EEE1 /* AppDelegate.swift */; };
@@ -17,6 +19,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		6D12E1F3293EBAA4006876BF /* PerfilUsuarioViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PerfilUsuarioViewController.swift; sourceTree = "<group>"; };
+		6D12E1F6293EBE73006876BF /* DescripcionTicketTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DescripcionTicketTableViewCell.swift; sourceTree = "<group>"; };
 		6D499789293D64670039B24E /* InicioTicketsCompradosViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InicioTicketsCompradosViewController.swift; sourceTree = "<group>"; };
 		6D49978B293D67090039B24E /* TicketsCompradosTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TicketsCompradosTableViewCell.swift; sourceTree = "<group>"; };
 		6D5559702936D6090076EEE1 /* Tickets.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Tickets.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -66,6 +70,8 @@
 				6D5559812936D60B0076EEE1 /* Info.plist */,
 				6D499789293D64670039B24E /* InicioTicketsCompradosViewController.swift */,
 				6D49978B293D67090039B24E /* TicketsCompradosTableViewCell.swift */,
+				6D12E1F3293EBAA4006876BF /* PerfilUsuarioViewController.swift */,
+				6D12E1F6293EBE73006876BF /* DescripcionTicketTableViewCell.swift */,
 			);
 			path = Tickets;
 			sourceTree = "<group>";
@@ -141,6 +147,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6D12E1F4293EBAA4006876BF /* PerfilUsuarioViewController.swift in Sources */,
+				6D12E1F7293EBE73006876BF /* DescripcionTicketTableViewCell.swift in Sources */,
 				6D49978C293D67090039B24E /* TicketsCompradosTableViewCell.swift in Sources */,
 				6D5559742936D6090076EEE1 /* AppDelegate.swift in Sources */,
 				6D5559762936D6090076EEE1 /* SceneDelegate.swift in Sources */,
