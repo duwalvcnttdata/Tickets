@@ -1,19 +1,16 @@
 //
-//  DescripcionTicketTableViewCell.swift
+//  CategoriaTableViewCell.swift
 //  Tickets
 //
-//  Created by Duwal Abel Varillas Castro on 5/12/22.
+//  Created by Duwal Abel Varillas Castro on 7/12/22.
 //
 
 import UIKit
 
-class DescripcionTicketTableViewCell: UITableViewCell {
+class CategoriaTableViewCell: UITableViewCell {
 
-    @IBOutlet weak var nombrePeliculaLabel: UILabel!
+    @IBOutlet weak var nombreCategoriaLabel: UILabel!
     
-    @IBOutlet weak var fechaLabel: UILabel!
-    
-    @IBOutlet weak var direccionLabel: UILabel!
     
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -25,6 +22,5 @@ class DescripcionTicketTableViewCell: UITableViewCell {
 
         // Configure the view for the selected state
     }
-    
 
 }
