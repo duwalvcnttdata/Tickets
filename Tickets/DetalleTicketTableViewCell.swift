@@ -11,6 +11,8 @@ class DetalleTicketTableViewCell: UITableViewCell {
 
     @IBOutlet weak var nombreLabel: UILabel!
     
+    @IBOutlet weak var qrImageView: UIImageView!
+    
     @IBOutlet weak var fechaLabel: UILabel!
     
     @IBOutlet weak var organizadorLabel: UILabel!
@@ -36,7 +38,21 @@ class DetalleTicketTableViewCell: UITableViewCell {
         fechaLabel.text = ticket?.fecha
         organizadorLabel.text = ticket?.organizador
         direccionLabel.text = ticket?.ubicacion
+        qrImageView.image = generarQR()
     }
     
+    func generarQR() -> UIImage? {
+        let data = ticket?.codigo.data(using: .ascii)
+        if let filtro = CIFilter(name: "CIQRCodeGenerator") {
+            filtro.setValue(data, forKey: "inputMessage")
+            let transformador = CGAffineTransform(scaleX: 3, y: 3)
+            
+            if let output = filtro.outputImage?.transformed(by: transformador)  {
+                let imagen = UIImage(ciImage: output)
+                return imagen
+            }
+        }
+        return nil
+    }
 
 }

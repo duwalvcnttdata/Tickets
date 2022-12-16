@@ -8,11 +8,12 @@
 import UIKit
 
 struct Ticket {
+    let codigo: String
     let nombre: String
     let organizador: String
     let ubicacion: String
     let fecha: String
-    let tipos: [TipoAsiento]
+    let tipoAsiento: [TipoAsiento]
 }
 
 struct TipoAsiento {
@@ -25,22 +26,22 @@ struct TipoAsiento {
 class InicioTicketsCompradosViewController: UIViewController {
     
     let ticketsComprados = [
-        Ticket(nombre: "Wakanda Forever 1", organizador: "Cine 1", ubicacion: "Ubicacion 1", fecha: "dd/mm/yyyy 00:00", tipos: [
+        Ticket(codigo: "000001", nombre: "Wakanda Forever 1", organizador: "Cine 1", ubicacion: "Ubicacion 1", fecha: "dd/mm/yyyy 00:00", tipoAsiento: [
             TipoAsiento(nombre: "General", simbolo: "S/.", precio: 16.00, cantidad: 1),
             TipoAsiento(nombre: "Adulto Mayor", simbolo: "S/.", precio: 12.00, cantidad: 1),
             TipoAsiento(nombre: "Menor", simbolo: "S/.", precio: 14.00, cantidad: 1)
         ]),
-        Ticket(nombre: "Wakanda Forever 2", organizador: "Cine 2", ubicacion: "Ubicacion 2", fecha: "dd/mm/yyyy 00:00", tipos: [
+        Ticket(codigo: "000002", nombre: "Wakanda Forever 2", organizador: "Cine 2", ubicacion: "Ubicacion 2", fecha: "dd/mm/yyyy 00:00", tipoAsiento: [
             TipoAsiento(nombre: "General", simbolo: "S/.", precio: 16.00, cantidad: 2),
             TipoAsiento(nombre: "Adulto Mayor", simbolo: "S/.", precio: 12.00, cantidad: 2),
             TipoAsiento(nombre: "Menor", simbolo: "S/.", precio: 14.00, cantidad: 2)
         ]),
-        Ticket(nombre: "Wakanda Forever 3", organizador: "Cine 3", ubicacion: "Ubicacion 3", fecha: "dd/mm/yyyy 00:00", tipos: [
+        Ticket(codigo: "000003", nombre: "Wakanda Forever 3", organizador: "Cine 3", ubicacion: "Ubicacion 3", fecha: "dd/mm/yyyy 00:00", tipoAsiento: [
             TipoAsiento(nombre: "General", simbolo: "S/.", precio: 16.00, cantidad: 3),
             TipoAsiento(nombre: "Adulto Mayor", simbolo: "S/.", precio: 12.00, cantidad: 3),
             TipoAsiento(nombre: "Menor", simbolo: "S/.", precio: 14.00, cantidad: 3)
         ]),
-        Ticket(nombre: "Wakanda Forever 4", organizador: "Cine 4", ubicacion: "Ubicacion 4", fecha: "dd/mm/yyyy 00:00", tipos: [
+        Ticket(codigo: "000004", nombre: "Wakanda Forever 4", organizador: "Cine 4", ubicacion: "Ubicacion 4", fecha: "dd/mm/yyyy 00:00", tipoAsiento: [
             TipoAsiento(nombre: "General", simbolo: "S/.", precio: 16.00, cantidad: 4),
             TipoAsiento(nombre: "Adulto Mayor", simbolo: "S/.", precio: 12.00, cantidad: 4),
             TipoAsiento(nombre: "Menor", simbolo: "S/.", precio: 14.00, cantidad: 4)

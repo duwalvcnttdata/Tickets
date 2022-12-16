@@ -54,7 +54,6 @@ extension EventosViewController: UITableViewDataSource, UITableViewDelegate {
             return
         }
         navigationController?.pushViewController(detalleEventoStoryboardID, animated: true)
-        
     }
     
     

@@ -33,7 +33,7 @@ extension DetalleTicketViewController: UITableViewDataSource {
         if section == 0 {
             return 1
         } else {
-            return ticket?.tipos.count ?? 0
+            return ticket?.tipoAsiento.count ?? 0
         }
     }
     
@@ -45,7 +45,7 @@ extension DetalleTicketViewController: UITableViewDataSource {
             return cell
         }
         else if indexPath.section == 1, let cell = tableView.dequeueReusableCell(withIdentifier: "tipoEntradaIdentifier", for: indexPath) as? TipoAsientoTableViewCell {
-            cell.datosTipoAsiento = ticket?.tipos[indexPath.row]
+            cell.datosTipoAsiento = ticket?.tipoAsiento[indexPath.row]
             return cell
         }
         return UITableViewCell()
